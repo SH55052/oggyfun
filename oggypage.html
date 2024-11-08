@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function scrl() {
+            document.getElementById('nv').style.background = 'linear-gradient(90deg,transparent,#031321)';
+            document.getElementById('nv').style.backdropFilter = 'blur(100px)';
+            document.getElementById('nv').style.border = 'none';
+        }
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://oggy.com/wp-content/uploads/2017/09/Logo-Oggy_en.png" type="shortcuticon">
+<script src="https://kit.fontawesome.com/ed2d055c52.js" crossorigin="anonymous"></script>
+<title>Oggy and the Cockroaches</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    #nv{
+        /* background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.5)); */
+        background:transparent;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        overflow:hidden;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 1;
+    }
+    .logonav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+    }
+    .othernavs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        word-spacing: 45px;
+        padding-right: 25px;
+    }
+    #mnu{
+        padding: 0 20px 0 0;
+        width: 100px;
+        list-style: none;
+        margin: 0 25px;
+        font-size: 20px;
+        color: whitesmoke;
+        outline: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;https://image.tmdb.org/t/p/original/7rvCpnIIJbZTpuo2HVCjcv0bwnJ.jpg
+    }
+    #mn{
+        padding: 0 20px 0 0;
+        width: 100px;
+        list-style: none;
+        margin: 0 25px;
+        font-size: 20px;
+        color: whitesmoke;
+        outline: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;https://image.tmdb.org/t/p/original/7rvCpnIIJbZTpuo2HVCjcv0bwnJ.jpg
+    }
+    #mnu:hover{
+        text-transform: uppercase;
+        transition: 4s;
+        cursor: pointer;
+    }
+    .rgtbar{
+        display: flex;
+
+    }
+    header{
+        background-image: linear-gradient(45deg,#031321 40%,rgba(23, 9, 133, 0.65)),url(https://swall.teahub.io/photos/small/145-1452475_oggy-and-cockroaches-4k-oggy-and-the-cockroaches.jpg);
+        height: 625px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        overflow: hidden;
+        box-shadow: 0 0 40px 50px #031321;
+        animation: wallchange 10s linear infinite;
+    }
+@keyframes wallchange {
+    35% {
+    background-image: linear-gradient(45deg,#031321 40%,rgba(23, 9, 133, 0.65)),url(https://www.desicomments.com/wp-content/uploads/Oggy-With-Olivia-And-Cockroaches.jpg);
+    }
+    50% {
+    background-image: linear-gradient(45deg,#031321 40%,rgba(23, 9, 133, 0.65)),url(https://i.pinimg.com/originals/b5/29/89/b52989f7a99ce8d4b151143d7c5d9f7e.gif);
+    }
+    100% {
+    background-image: linear-gradient(45deg,#031321 40%,rgba(23, 9, 133, 0.65)),url(https://www.cartoonbrew.com/wp-content/uploads/2020/09/oggy_and_the_cockroaches-1280x600.jpg);
+    }
+}
+    .title{
+        text-align: left;
+        font-size: 50px;
+        color: rgb(9, 241, 241);
+    }
+    .abt{
+        color: aliceblue;
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        font-size: 40px;
+    }
+    .abt2{
+        color: aliceblue;
+        padding: 15px 350px 5px 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .idnty{
+        color: burlywood;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 22px;
+        padding: 20px 0 5px 40px;
+        font-weight: 900;
+    }
+    .create{
+        color: #2196f3;
+        font-size:20px;
+        font-family: sans-serif;
+        padding: 5px 0 5px 40px;
+        list-style: none;
+    }
+    .drect{
+        padding: 15px 0 5px 40px;
+        color: bisque;
+        font-size: 22px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 900;
+    }
+    .drtprson{
+        color: #00bfff;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px 0 5px 40px;
+    }
+    .xilam{
+        display: flex;
+        justify-content: space-between;
+        height: 600px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        background: black;
+        box-shadow: 0 0 50px 45px #031321;
+    }
+    @keyframes colorchange {
+        50%{
+            background-color: #7f1bc7;
+        }
+        100%{
+            background-color: #e83c30;
+        }
+    }
+    .tnx{
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-top: 20px;
+        color: white;
+        font-weight: bolder;
+        overflow: hidden;
+    }
+    .tnxcn{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 5px;
+        color: whitesmoke;
+        font-weight: bolder;
+        overflow: hidden;
+    }
+    .xlam{
+        text-align: center;
+        font-size: 50px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        letter-spacing: 1px;
+    }
+    .anim{
+        color: beige;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 5px;
+    }
+    .page{
+        background-color: #000;
+        height: 50px;
+        width: 300px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 27px;
+        font-weight: bolder;
+        font-family:serif;
+        color: whitesmoke;
+        margin-top: 20px;
+        font-weight: bolder;
+        display: flex;
+        box-sizing: border-box;
+    }
+    .page:hover{
+        transition: 2s;
+        color: #00bfff;
+        animation: none;
+        box-shadow: none;
+
+        }
+    .page2{
+        background:white;
+        height: 50px;
+        width: 300px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 27px;
+        font-weight: bolder;
+        font-family:serif;
+        color: black;
+        margin-top: 20px;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .page2:hover{
+        box-shadow: 0 0 50px 10px whitesmoke;
+    }
+    .page3{
+        background-color: rgba(255,255,255,.1);
+        height: 50px;
+        width: 250px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 27px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        font-weight: 500;
+        transition: 2s;
+    }
+    .page3:hover{
+        background-color: rgba(255,255,255,.3);
+        transition: 3s;
+        color: white;
+    }
+
+    .xlmp2{
+        padding-top: 15px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .xlmp3{
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .xlmp4{
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .cn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 800px;
+        width: 100%;
+        background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)), url(https://images.foxtv.com/static.fox29.com/www.fox29.com/content/uploads/2022/10/1280/720/Cartoon-Network.jpg?ve=1&tl=1);
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .ttlecn{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        padding: 20px 0 50px 0;
+    }
+    .chldhd{
+        text-align: center;
+        color: white;
+        font-size: 22px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        font-style: bolder;
+        padding-top: 10px;
+    }
+    .cntnx{
+        text-align: center;
+        color: whitesmoke;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        font-style: bolder;
+    }
+    .cnpara1{
+        color: white;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        padding: 70px 30px 0 30px;
+    }
+    .cnp2{
+        color: white;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        padding: 50px 30px 0 30px;
+    }
+    .cnp3{
+        color: white;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        padding: 20px 30px 0 30px;
+    }
+    .cnp4{
+        color: white;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        padding: 40px 30px 0 30px;
+    }
+    .cnp5{
+        color: white;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        padding: 10px 30px 0 30px;
+    }
+    .season1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    }
+    .s1p1{
+        text-align: center;
+        color: white;
+        font-size: 35px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+    }
+    .s1p2{
+        color: white;
+        font-size: 45px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .abts3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+        width: 100%;
+        background-image: linear-gradient(white,aliceblue);
+        background-size: cover;
+        background-position: center;
+    }
+    .s1head{
+        color: #000;
+        font-size: 125px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .abts3 p{
+        text-align: center;
+        color: #031321;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .abts4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 750px;
+        width: 100%;
+        background-image: linear-gradient(120deg,rgba(255,255,255,.1),#7f22e9),url(https://media.tenor.com/eAABUZZBcJ8AAAAC/give-me-toilet-paper-oggy-and-the-cockroaches.gif);
+        background-size: cover;
+        background-position: center;
+    }
+    .abts4 p{
+        text-align: center;
+        color: #031321;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .s4head{
+        color: #000;
+        font-size: 45px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .s1p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #000;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .expl{
+        height: 50px;
+        width: 200px;
+        background:rgba(255,255,255,.1);
+        border-radius: 25px;
+        outline: none;
+        border: solid 1px whitesmoke;
+        color: wheat;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 22px;
+        margin-top: 20px;
+        cursor: not-allowed;
+    }
+    .expl:before{
+        content: '';
+        background:linear-gradient(90deg,trnasparent,rgba(255,255,255,.4),transparent);
+        height: 70px;
+        width: 60px;
+        position: absolute;
+        top: 495px;
+        left: 527px;
+    }
+    .tnxend{
+        color: white;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        margin-top: 4px;
+    }
+    .lndp1{
+        padding: 5px 40px 0 40px;
+        text-align: center;
+        color: white;
+        font-size: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    /* @media only screen and (max-width: 425px) {
+        body{
+            filter: blur(20px);
+        }
+    }  */
+    /* @media only screen and (max-width: 768px) {
+        .xilam{
+            height: 890px;
+        }
+    }
+    @media only screen and (min-width: 769px) {
+        .xilam{
+            height: 760px;
+        }
+    } */
+    .c{
+        font-size: 90px;
+    }
+    .n{
+        font-size: 90px;
+    }
+    .oggyimg{
+        height: 150px;
+        border-radius: 50%;
+    }
+.credit{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+}
+.rare{
+    height: 30px;
+    width: 40px;
+}
+.creimg{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.creditttl{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+    -webkit-box-reflect: below 1px transparent;
+}
+i {
+    color: white;
+}
+#ttr{
+    color: #00bfff;
+}
+#tweet:hover #ttr {
+    color: white;
+    transition: 1.5s;
+}
+#tweet:hover  {
+    background-color: #00bfff;
+    transition: 1.5s;
+}
+#whap{
+    color: lime;
+}
+#what:hover{
+    background-color: #00FF00;
+    transition: 1.5s;
+}
+#what:hover #whap{
+    color: white;
+    transition: 1.5s;
+}
+#insta{
+    transition: 2s;
+}
+#insta:hover{
+    background: linear-gradient(120deg,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#F56040, #F77737,#FD1D1D);
+    transition: 1.5s;
+}
+.btnbar{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+}
+#bar{
+    font-size: 30px;
+    color: whitesmoke;
+}
+.res{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.oggimg{
+    display: flex;
+    justify-content: center;
+}
+.contt{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 10px;
+    color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.netphoto{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.warner{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
+.ogglogo{
+    height: 100px;
+    width: 200px;
+}
+.oggimg a{
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+.oggimg{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.xlmhead{
+    font-weight: 900;
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.xlmsub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#xlmp{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+ul{
+    margin-top: 5px;
+}
+li{
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color: turquoise;
+}
+.shows{
+    margin-top: 11px;
+    font-size: 27px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.xlmweb{
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #E1306C;
+    width: 100px;
+}
+.xlmweb:hover{
+    text-decoration: dashed;
+}
+.xlmimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.xlmhist{
+    padding-top: 5px;
+}
+
+.xlmweb{
+    color: white;
+    background: linear-gradient(90deg,#E1306C 50%,crimson);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration-line: none;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    border-radius: 10px;
+}
+.xlmweb:hover{
+    filter: brightness(100%);
+    transform: translateY(-7px);
+    transition: 1.5s;
+    box-shadow: #f51d65 0 0 40px 5px;
+    width: 220px;
+}
+.networkttl{
+    font-weight: bolder;
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-bottom: 20px;
+}
+.cnabt{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:15px;
+    font-weight: 200;
+    padding: 0 30px 10px 30px;
+}
+.last{
+    margin-top: 10px;
+    flex-direction: column;
+}
+.cnbtn{
+    padding-top: 5px;
+    color: white;
+    background: transparent;
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+    border: solid 3px whitesmoke;
+    margin-top: 10px;
+}
+.cnbtn:hover{
+    background-color: white;
+    color: #000;
+}
+.lazy{
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+@keyframes backchange {
+    35%{
+        background-image: linear-gradient(45deg,#031321 45%,rgba(255,255,255,.1)),url(https://www.desicomments.com/wp-content/uploads/Oggy-With-Olivia-And-Cockroaches.jpg);
+    }
+    50%{
+        background-image: linear-gradient(45deg,#031321 45%,rgba(255,255,255,.1)),url(https://media.tenor.com/KfYF3hN9UfkAAAAC/oggy-and-the-cockroaches-oggy-and-jack-peeing.gif);
+    }
+    100%{
+        background-image: linear-gradient(45deg,#031321 45%,rgba(255,255,255,.1)),url(https://www.cartoonbrew.com/wp-content/uploads/2020/09/oggy_and_the_cockroaches-1280x600.jpg);
+    }
+}
+/* @media only screen and (min-width: 2560px) {
+        .cn{
+            height: 1000px;
+        }
+        .season1{
+            height: 1000px;
+        }
+        .abts4{
+            height: 1000px;
+        }
+        header{
+            height: 1000px;
+        }
+        .xilam{
+            height: 1000px;
+        }
+    } */
+    #nv a {
+        color: white;
+        text-decoration: double;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #nv a:hover {
+        text-decoration: underline;
+    }
+    #con{
+        margin-left: 25px;
+    }
+    #shop{
+        margin-right: 25px;
+    }
+    /* @media only screen and (max-width:768px) {
+        .lazy{
+            font-size: 20px;
+        }
+    }
+    @media only screen and (min-width:1024px) {
+        .lazy{
+            font-size: 30px;
+        }
+    } */
+.old{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),url(https://bloximages.newyork1.vip.townnews.com/lancasteronline.com/content/tncms/assets/v3/editorial/0/61/0616edb0-1837-11ea-861b-f75174d31f97/5dea697f44a8d.image.jpg?resize=1396%2C1047);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    min-width: 100%;
+    overflow-x:hidden;
+}
+.card1{
+    overflow: hidden;
+    height: 500px;
+    min-width: 320px;
+    /* background: rgba(255,255,255,.1);
+    backdrop-filter: blur(200px); */
+}
+.card2{
+    overflow: hidden;
+    height: 500px;
+    min-width: 320px;
+    /* background:rgba(255,255,255,.3);
+    backdrop-filter: blur(200px); */
+}
+.card1 img{
+    height: 225px;
+    width: 100%;
+}
+.card2 img{
+    height: 225px;
+    width: 100%;
+}
+.story1{
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-family: sans;
+}
+.imdb{
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-family: sans;
+    font-weight: bolder;
+}
+.titlechat{
+    font-size: 30px;
+    text-align: center;
+    font-family: serif;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+h6{
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.chatbtn{
+    background-color: rgba(255,255,255,.2);
+    color: whitesmoke;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    animation: changechat 5s linear infinite;
+    transition: 2s;
+}
+.chatbtn:hover{
+    background-color: rgba(255,255,255,.1);
+    color: white;
+    transition: 1.5s;
+}
+.subchat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    height: 550px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.cards::-webkit-scrollbar{
+    display: none;
+}
+.scrltxt{
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: scrollit 10s linear infinite;
+}
+@keyframes scrollit {
+    0%{
+        transform: translateX(-110%);
+    }
+    100%{
+        transform: translateX(600%);
+    }
+}
+.scrldiv{
+    background-color: rgba(0,0,0,.6);
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#chatfbtn{
+    margin-top: 11px;
+}
+.aboutOggy{
+    position: absolute;
+    top: 80px;
+    padding: 10px 0 0 10px;
+}
+.lazy{
+    padding-top: 20px;
+    display: block;
+    width: 765px;
+    line-height: 25px;
+}
+.creators{
+    padding-top: 20px;
+    color: rgb(9, 241, 241);
+    font-size: 17px;
+    line-height: 20px;
+}
+.xilamtwo{
+    display: flex;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-image:linear-gradient(360deg,rgba(23, 9, 133, .79),rgba(23, 9, 133, 0.65)),url(https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg?w=826&t=st=1673680526~exp=1673681126~hmac=56e858f15715321be9a5fe55e17b94f5431847a35e4ea098dc6a59d91fb16c34);
+}
+.hq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-image: linear-gradient(45deg,rgb(0, 225, 255),rgba(255,255,255,.1)),url(data:image/jpeg;base64,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);
+    border-radius: 50%;
+    -webkit-box-reflect: below 1px rgba(0,0,0,.5);
+    margin-left: 60px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 30px 0 #00ffdd,0 0 40px 0 #07d2ec;
+}
+.sv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.line{
+    height: 2px;
+    width: 270px;
+    background-color: white;
+}
+.xlmdata{
+    display: flex;
+    height: 250px;
+    overflow: hidden;
+}
+.xlmdata2{
+    display: flex;
+    margin-top: 20px;
+    height: 250px;
+    overflow: hidden;
+}
+.datadiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.datasv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#star{
+    color: #ffaf00;
+    font-size: 70px;
+}
+#love{
+    color: red;
+    font-size: 75px;
+}
+#cat{
+    color: #00ffdd;
+    font-size: 75px;
+}
+#rain{
+    color: white;
+    font-size: 75px;
+}
+#star,#love,#cat,#rain{
+    margin-top: 10px;
+}
+#awsm{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 100px;
+color: white;
+}
+#low{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.cnabt{
+    text-align: left;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    }
+.cnbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 1s;
+    width: 200px;
+    padding:0;
+    margin-left: 30px;
+    height: 40px;
+    }
+.networkttl{
+    margin-left: 30px;
+    font-size: 60px;
+    }
+.chatbtn{
+    outline: none;
+}
+.own{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+.season1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    background-image: linear-gradient(360deg,rgba(0,0,0,.6),rgba(0,0,0,.7)),url(https://images-na.ssl-images-amazon.com/images/S/pv-target-images/3bc1619127162564ee3f27c15985dff2e14566189f2c236f5ddb424626b81ed4._RI_V_TTW_.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.season4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    background-image: linear-gradient(360deg,rgba(0,0,0,.5),rgba(0,0,0,.6)),url(https://cdn.animationexplore.com/thumbs/oggy-and-the-cockroaches-season-4-episode-34-jacks-nephew.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.s4p1{
+    font-size: 35px;
+}
+.s4p2{
+    font-size: 30px;
+}
+.page4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background-color: white;
+    height: 55px;
+    width: 250px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: not-allowed;
+}
+.cards{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.card1{
+    height: 300px;
+    justify-content: left;
+}
+.card2{
+    height: 300px;
+    justify-content: left;
+}
+.olddiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.oldhead{
+    color: white;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.story1{
+    font-size: 16px;
+    text-align: center;
+}
+.titlechat{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn{
+height:50px;
+width:200px;
+font-family:sans-serif;
+background:linear-gradient(-45deg,rgba(255,255,255,.1) 50%,rgba(255,255,255,.2) 50%);
+color:white;
+font-size:22px;
+border:none;
+outline:none;
+cursor:pointer;
+position:absolute;
+top:0px;
+left:0px;
+overflow: hidden;
+}
+.btn:hover.btn:before{
+position: absolute;
+left: 250px;
+transition: 0.3s;
+}
+@keyframes go {
+    100%{
+        left: 250px;
+    }
+}
+.hover{
+height:0;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index: 1;
+}
+.container{
+height:60px;
+width:200px;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+overflow: hidden;
+}
+.btn:before{
+content:"";
+position:absolute;
+height:150px;
+width:40px;
+background:linear-gradient(45deg,rgba(255,255,255,.2) 50%,rgba(255,255,255,.3));
+top:-65px;
+left:-80px;
+z-index:1;
+transition: .3s;
+transform: rotate(45deg);
+}
+.story1{
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+}
+#fstbtn{
+    margin-top: 6px;
+}
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,.9);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #00bfff;
+    transition: 4s;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background:linear-gradient(rgb(213, 20, 220),rgb(138, 5, 233));
+    transition: 3s;
+}
+@media only screen and (max-width : 768px){
+    .lazy{
+        width: 95%;
+        padding-right: 100px;
+        display: block;
+    }
+    header{
+        background-image: linear-gradient(90deg,rgba(23, 9, 133, 0.99),rgba(23, 9, 133, 0.65)),url(https://swall.teahub.io/photos/small/145-1452475_oggy-and-cockroaches-4k-oggy-and-the-cockroaches.jpg);
+    }
+    @keyframes wallchange {
+    35% {
+    background-image: linear-gradient(90deg,rgba(23, 9, 133, 0.99),rgba(23, 9, 133, 0.65)),url(https://www.desicomments.com/wp-content/uploads/Oggy-With-Olivia-And-Cockroaches.jpg);
+    }
+    50% {
+    background-image: linear-gradient(90deg,rgba(23, 9, 133, 0.99),rgba(23, 9, 133, 0.65)),url(https://i.pinimg.com/originals/b5/29/89/b52989f7a99ce8d4b151143d7c5d9f7e.gif);
+    }
+    100% {
+    background-image: linear-gradient(90deg,rgba(23, 9, 133, 0.99),rgba(23, 9, 133, 0.65)),url(https://www.cartoonbrew.com/wp-content/uploads/2020/09/oggy_and_the_cockroaches-1280x600.jpg);
+    }
+}
+}
+@media only screen and (max-width : 650px){
+    #nv{
+        border-bottom: solid 1px #00ffdd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80px;
+    }
+    .othernavs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        word-spacing: 5px;
+    }
+    #nv a{
+        font-size: 18px;
+        margin: 0;
+    }
+}
+@media only screen and (max-width : 650px){
+    #nv a{
+        font-size: 18px;
+        margin: 0;
+    }
+    .othernavs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        word-spacing: 5px;
+    }
+}
+@media only screen and (max-width : 410px){
+    .networkttl{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width : 425px){
+    .datasv{
+        flex-direction: column;
+    }
+    .services{
+        height: 900px;
+    }
+    #nv{
+        border-bottom: solid 1px #00ffdd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80px;
+    }
+    #nv a{
+        font-size: 14px;
+        margin: 0;
+    }
+    .othernavs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        word-spacing: 5px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .lazy{
+        font-size: 15px;
+        line-height: normal;
+        padding-right: 20px;
+    }
+    header{
+        background: #031321;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: none;
+    }
+    .aboutOggy{
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    #awsm,#star,#rain,#love,#cat{
+        font-size: 40px;
+    }
+    .sv{
+        height: 200px;
+        width: 200px;
+    }
+    .xilam{
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 700px;
+        position: relative;
+    }
+    .datadiv{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    .xlmsub{
+        width: 100%;
+    }
+    #xlmp{
+        padding-right: 40px;
+    }
+    .xlmhead{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .cnbtn{
+        width: 200px;
+    }
+    .networkttl{
+        text-align: left;
+        font-size: 30px;
+        width: 100%;
+    }
+    .cnabt{
+        text-align: left;
+        font-size: 17px;
+        padding-right: 20px;
+    }
+    .cn{
+        height: 600px;
+    }
+    .hq{
+        height: 230px;
+        width: 230px;
+        margin-left: 0;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+    .own{
+        font-size: 20px;
+    }
+    .line{
+        display: none;
+    }
+    .xlmsub{
+        position: absolute;
+        bottom: 70px;
+    }
+}
+    </style>
+</head>
+<body onscroll="scrl()">
+    <nav id="nv">
+        <div class="logonav">
+            <a class="contact">
+                <img src="https://oggy.com/wp-content/uploads/2017/09/Logo-Oggy_en.png" style="height: 40px;filter: brightness(200%);">
+            </a>
+        </div>
+        <div class="othernavs">
+            <a href="">Developer</a>
+            &nbsp;
+            <a href="">Contribution</a>
+            &nbsp;
+            <a href="">Shopping</a>
+            &nbsp;
+            <a href="">Wallpapers</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="aboutOggy">
+            <p class="title">Oggy <br> <span style="color: #ff0055;">and the Cockroaches</span></p>
+            <p class="lazy">Oggy and the Cockroaches is famous worldwide. For the oggy lovers, I have created this site. Oggy, Who is a lazy cat, loves to watch TV and eat food. However, his flatmates, Who happen to be three tiny cockroaches, enjoy attacking Oggy's refrigerator and creating chaos, Which ruins his peace.It is not true that Oggy would not be the happiest of cats if three cockroaches hadn't decided to settle inside his comfortable home. Here you can enjoy watching all the episodes of oggy and it's fully free. I specially want to thank Cartoon-Network and I also want to thank raretoons-india.</p>
+            <div class="creators">
+                <p class="first">First episode: September 6, 1998</p>
+                <p class="final">Final episode: January 30, 2019</p>
+                <p class="director">Director: Olivier Jean-Marie</p>
+                <p class="starring">Starring: Marc du Pontavice</p>
+            </div>
+        </div>
+    </header>
+<script>
+        let ps;
+        let cP = "oggysfan";
+        ps = prompt("Please enter password");
+        if (ps == cP) {
+            alert("Done");
+        }
+        else {
+            window.location = "https://oggy-and-the-cockroaches.on.drv.tw/%20Oggy%20and%20the%20Cockroaches%201998%20%E2%80%A7%20Comedy%20Series/wrongpage.html";
+        }
+</script>
+<div class="services">
+    <div class="datasv">
+        <div class="sv">
+            <p id="awsm">8</p>
+            <p id="low">Seasons</p>
+            <i class="fa-solid fa-cloud-rain" id="rain"></i>
+        </div>
+        <div class="sv">
+            <p  id="awsm">7.5</p>
+            <p id="low">IMDb Rating</p>
+            <i class="fa-solid fa-star" id="star"></i>
+        </div>
+        <div class="sv">
+            <p id="awsm">87%</p>
+            <p id="low">Like Percentage</p>
+            <i class="fa-solid fa-heart" id="love"></i>
+        </div>
+        <div class="sv">
+            <p id="awsm">23</p>
+            <p id="low">Oggy's age</p>
+            <i class="fa-solid fa-cat" id="cat"></i>
+        </div>
+    </div>
+</div>
+
+    <div class="xilam">
+            <div class="xlmsub">
+                <p class="xlmhead">Xilam Animation</p>
+                <p class="xlmabt" id="xlmp">
+                    Xilam is a French production company that specializes in animated television series and feature film around the whole world. Marc du Pontavice and his wife Alix founded it in 1999.
+                    Thank you very much for your hard work.Your shows really made us feel we are also children now.
+                </p>
+                <a href="https://xilam.com" class="xlmweb">View page</a>
+            </div>
+            <div class="datadiv">
+                    <div class="hq">
+                        <p class="own">Marc du Pontavice Alix</p>
+                        <div class="line"></div>
+                        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 20px;color: white;">Owner</p>
+                    </div>
+            </div>
+    </div>
+
+    <div class="cn">
+        <p class="networkttl">Cartoon network</p>
+        <p class="cnabt">Cartoon Network primarily targets children aged 6 to 14,while its early morning Cartoonito block is aimed at preschoolers and kindergarteners aged 2 to 6,and the channel shares channel space with Adult Swim.Founded by Ted Turner,the channel was launched on October 1, 1992, and primarily broadcasts animated television series, mostly children's programming, ranging from action to animated comedy. It currently runs from 6 a.m. - 8 p.m. ET/PT Mondays - Saturdays and 6 a.m. - 9 p.m. ET/PT on Sunday.</p>
+        <a href="https://www.cartoonnetworkindia.com" class="cnbtn" id="cnbtn" onclick="document.getElementById('cnbtn').style.filter = 'brightness(75%)';" onmouseout="document.getElementById('cnbtn').style.filter = 'brightness(150%)';">Visit site</a>
+    </div>
+
+    <div class="seasons">
+        <div class="season1">
+        <p class="s1p1">Oggy and the Cockroaches</p>
+        <p class="s1p2">Season 1</p>
+        <p class="s1p">Year: 1999 (Indian Release Date)</p>
+        <p class="s1p">Language: Hindi</p>
+        <p class="s1p">Episodes: 78</p>
+        <div class = "container" >
+            <a href="https://oggy-and-the-cockroaches.on.drv.tw/%20Oggy%20and%20the%20Cockroaches%201998%20%E2%80%A7%20Comedy%20Series/season1.html"><button class="btn">Watch Now</button></a>
+        </div>
+        </div>
+        <div class="season4">
+        <p class="s4p1">Oggy and the Cockroaches</p>
+        <p class="s4p2">Season 4</p>
+        <p class="s4p">Year: 2012 (Indian Release Date)</p>
+        <p class="s4p">Language: Hindi</p>
+        <p class="s4p">Episodes: 74</p>
+        <a href="" class="page4">Coming Soon</a>
+        </div>
+    </div>
+
+    <div class="old">
+        <div class="olddiv">
+            <p class="oldhead">CN Old Movies</p>
+        </div>
+        <div class="cards">
+            
+                    <div class="card1">
+                        <div class="subchat">
+                        <p class="titlechat">Chatpat Jhatpat</p>
+                        <p class="story1"> 
+                            The movie revolves around a naughty, confident and brazen boy named Chatpat. His antics reach new heights when he finds his look-alike, Jhatpat, who is rather meek and innocent.  
+                        </p>
+                        <div class = "container"  id="fstbtn">
+                            <a href="https://oggy-and-the-cockroaches.on.drv.tw/%20Oggy%20and%20the%20Cockroaches%201998%20%E2%80%A7%20Comedy%20Series/chatpat.html"><button class="btn">Watch Now</button></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="subchat">
+                        <p class="titlechat">Bhoot and Friends</p>
+                        <p class="story1">
+                            A friendly ghost helps a group of teenagers, who are on the lookout for a lost treasure. The mystery of the lost treasure has to be resolved to save everyone's lives.
+                        </p>
+                        <p class="imdb">IMDb-5.2/10</p>
+                        <div class = "container" >
+                            <a href="https://oggy-and-the-cockroaches.on.drv.tw/%20Oggy%20and%20the%20Cockroaches%201998%20%E2%80%A7%20Comedy%20Series/bhootfriends.html"><button class="btn">Watch Now</button></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="subchat">
+                        <p class="titlechat">Bhoot Raja Aur Roonie</p>
+                        <p class="story1">
+                            Ronnie, a young boy, befriends Raja, a ghost, and helps him find out the cause of his death while Raja helps Ronnie fight against his school bullies.
+                        </p>
+                        <p class="imdb">IMDb-7.3/10</p>
+                        <div class = "container" >
+                            <a href="https://oggy-and-the-cockroaches.on.drv.tw/%20Oggy%20and%20the%20Cockroaches%201998%20%E2%80%A7%20Comedy%20Series/bhootrajaaurroonie.html"><button class="btn">Watch Now</button></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="subchat">
+                        <p class="titlechat">Bhoot Unkle</p>
+                        <p class="story1">
+                            A little boy's life changes when he befriends the ghost of a dead pirate. The ghost, with his magical powers, helps the boy save the town from the clutches of an evil person.
+                        </p>
+                        <p class="imdb">IMDb-4.2/10</p>
+                        <div class = "container" >
+                            <a href="https://oggy-and-the-cockroaches.on.drv.tw/%20Oggy%20and%20the%20Cockroaches%201998%20%E2%80%A7%20Comedy%20Series/bhootunkle.html"><button class="btn">Watch Now</button></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="subchat">
+                        <p class="titlechat">Bhoot Unkle</p>
+                        <p class="story1">
+                            A little boy's life changes when he befriends the ghost of a dead pirate. The ghost, with his magical powers, helps the boy save the town from the clutches of an evil person.
+                        </p>
+                        <p class="imdb">IMDb-4.2/10</p>
+                        <div class = "container" >
+                            <a href="https://oggy-and-the-cockroaches.on.drv.tw/%20Oggy%20and%20the%20Cockroaches%201998%20%E2%80%A7%20Comedy%20Series/chatpat.html"><button class="btn">Watch Now</button></a>
+                        </div>
+                        </div>
+                    </div>    
+        </div>
+            <div class="scrldiv">
+                <p class="scrltxt">Please scroll from left to right</p>
+            </div>
+    </div>
+
+    <footer>
+        <p class="tnxend">Thank You</p>
+        <p class="lndp1">This site is a home of oggy and the cockroaches.This series has really made our life full of enjoyment and thrills....So,redraw your world with this series.But don't forget to watch Cartoon Network.</p>
+
+            <div class="creimg">
+                <a href="https://raretoons-india.net/"><img src="https://raretoons-india.net/wp-content/uploads/2022/08/logo-freedom-l.gif" class="rare"></a>
+                <a href="https://www.warnerbros.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Warner_Bros._Animation_color_logo.svg/1200px-Warner_Bros._Animation_color_logo.svg.png" alt="" class="warner"></a>
+                <a href="https://www.cartoonnetworkindia.com/" class="netphoto"><img src="https://toon-int-images.akamaized.net/toonla/images/cnlatam/site/static-3.1.91.1/img/favicon-96x96.png" height="40px"></a>
+            </div>
+
+        <div class="last">
+
+            <div class="con">
+                <p class="contt">Copyright © Oggy and the Cockroaches. All rights reserved. 2023</p>
+            </div>
+            
+            <div class="social">
+                <a href="https://www.instagram.com/oggysfan/" class="scal" id="insta">
+                    <i class="fa-brands fa-instagram" id="gram"></i>
+                </a>
+        
+                <a href="https://twitter.com/Shadman55537492" class="scal" id="tweet">
+                    <i class="fa-brands fa-twitter" id="ttr"></i>
+                </a>
+        
+                <a href="https://wa.me/8801723817743?text=" class="scal" id="what">
+                    <i class="fa-brands fa-whatsapp" id="whap"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>
